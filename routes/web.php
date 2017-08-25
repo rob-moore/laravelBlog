@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     $tasks = DB::table('tasks')->get();
-    return view('welcome', compact('tasks'));
+    return view('blog', compact('tasks'));
 });
 
 
